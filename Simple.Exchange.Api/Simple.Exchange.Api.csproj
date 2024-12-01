@@ -4,10 +4,21 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>7fe95d09-e701-40b4-a509-3c2db606fb2f</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.11.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http.Resilience" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Simple.Exchange.Application\Simple.Exchange.Application.csproj" />
+    <ProjectReference Include="..\Simple.Exchange.Infrastructure\Simple.Exchange.Infrastructure.csproj" />
+    <ProjectReference Include="..\Simple.Exchange.Shared\Simple.Exchange.Shared.csproj" />
   </ItemGroup>
 
 </Project>
